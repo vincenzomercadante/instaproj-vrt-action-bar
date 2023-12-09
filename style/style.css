@@ -15,14 +15,18 @@
 /* navbar appearance*/
 @keyframes appear {
     0%{
-        transform: scaleX(0);
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
         transform-origin: left;
     }
 
     100%{
-        transform-origin: left;
-        transform: scaleX(1);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
+
 }
 
 /* ! reset */
@@ -58,6 +62,7 @@ i{
 
 /* ! navbar container */
 .navbar {
+    position: absolute;
     margin: 0 auto;
     padding: 5px 10px;
     flex-direction: column;
@@ -66,7 +71,7 @@ i{
     border-radius: 20px;
     color: #220661; 
     animation-name: appear; 
-    animation-duration: 0.5s;
+    animation-duration: 2s;
 
 }
 
